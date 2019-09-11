@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import numpy as np
 '''Want to import numPY somehow--PIP file
 import numPy as np
 '''
@@ -15,8 +15,8 @@ import numPy as np
 
 class Nuclear_Decay (object):
 	'''ToDo: Make ARRAYS not LIST'''
-	t = array []
-	n_uranium= []
+	t = np.array []
+	n_uranium= np.array []
 	'''Class includes functions:
 		__init__(self, ui, i_tau, i_dt, i_s_time)
 		fill_t_list()

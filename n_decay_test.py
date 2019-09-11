@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import numpy as np
 from nuclear_decay import Nuclear_Decay
 
 test = Nuclear_Decay()

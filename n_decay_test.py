@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
-import numpy as np
+#import numpy as np
 from nuclear_decay import Nuclear_Decay
 
-test = Nuclear_Decay()
-
-test.__init__(20, 1, .5, 5)
+test = Nuclear_Decay(20, 1, 0.5, 10)
 '''initial uranium, tau, dt, sample time'''
-test.fill_t_array(.5, 5)
-'''dt, s_time'''
+test.check_array_size()
+test.check_object_values()
+print(test.calculate())
+'''Dividing by 2 every time? At least something is being returned!'''
 
-test.get_t()
 
-test.calculate()
-
-test.get_n_uranium()
